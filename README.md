@@ -17,7 +17,7 @@ NOTE:  Don't ever try to use my codes, They are dirty, bad organized and couplin
 The whole construction process is:
 *   collect image data and extract feature vectors(crawler.py, descriptor_extractor.py)
 *   Using a subset of collected images to create a BOW codebook(create_bag_words.py),
-    Here i've used 100,000 images to create a 1M words by random sampling[An Efficient Key Point Quantization Algorithm for Large Scale Image Retrieval]
+    Here i've used 100,000 images to create a 1M words by random sampling(An Efficient Key Point Quantization Algorithm for Large Scale Image Retrieval)
     (Here i haven't used ranged search for simplicity, so each keypoint is classified into only un cluster)
 *   Qualificate sift vectores of rest of images. And index all of them like a test search engine.
 *   You can query most similar images for a test image  by using query.py
