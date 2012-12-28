@@ -9,7 +9,7 @@ No test performance metric is used here, simply test each case manually, so perf
 The results are not satisfactory for large dataset(douban). I've tried to solve semantic gap by adding spatial
 information. More researches have to be done to deal with large dataset.
 
-I think this system can be used for near-duplicated image detection which is what i wanted in first instance :)
+I think this system can be used for near-duplicated image detection which is what i wanted in the first instant :)
 
 NOTE:  Don't ever try to use my codes, They are dirty, bad organized and coupling. Uploaded here just for backup purpose.
 ----------------
@@ -31,14 +31,14 @@ Some works followed here:
 *   Large-scale near-duplicate image retrieval by kernel density estimation
 
 Most of these work used Mikolajczyk's Harris-Affine and Hessian Affine detector
-Its public available, but it's in binary. Here i just used SIFT for detection and description
-for simplicity and then it is pure python based :).
+Its public available, but it's in binary. Here i just used opencv's SIFT for detection and description
+for simplicity and so it is pure python based :).
 
 Some third party libraries used here:
 *   numpy, scipy, opencv, the basic ones.
 *   flann: pyflann is the best choice, since the opencv.flann libraries didn't work like i had expected
 *   twisted: a simply web service is implemented to upload images and get ranked results.
 
-An advice: Don't use sqlite for a dataset with more them 100 millions records.
+An advice: Don't use sqlite for a dataset with more then 100 millions records.
 
 
