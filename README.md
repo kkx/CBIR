@@ -11,7 +11,6 @@ information. More researches have to be done to deal with large dataset.
 
 I think this system can be used for near-duplicated image detection which is what i wanted in first instance :)
 
-----------------
 NOTE:  Don't ever try to use my codes, They are dirty, bad organized and coupling. Uploaded here just for backup purpose.
 ----------------
 
@@ -25,11 +24,11 @@ The whole construction process is:
 
 
 Some works followed here:
-Indexing in Large Scale Image Collections- Scaling Properties and Benchmark
-Efficient clustering and matching for object class recognition
-Object retrieval with large vocabularies and fast spatial matching
-An Effient Key Point Quantization Algorithm for Large Scale Image Retrieval
-Large-scale near-duplicate image retrieval by kernel density estimation
+*   Indexing in Large Scale Image Collections- Scaling Properties and Benchmark
+*   Efficient clustering and matching for object class recognition
+*   Object retrieval with large vocabularies and fast spatial matching
+*   An Effient Key Point Quantization Algorithm for Large Scale Image Retrieval
+*   Large-scale near-duplicate image retrieval by kernel density estimation
 
 Most of these work used Mikolajczyk's Harris-Affine and Hessian Affine detector
 Its public available, but it's in binary. Here i just used SIFT for detection and description
@@ -41,4 +40,5 @@ Some third party libraries used here:
 *   twisted: a simply web service is implemented to upload images and get ranked results.
 
 An advice: Don't use sqlite for a dataset with more them 100 millions records.
+
 
